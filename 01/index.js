@@ -18,7 +18,14 @@ console.log(numeros);
 
 const frutas = ["Banana", "Amora", "abacaxi", "uva", "Pera"]
 
-frutas.sort();
+frutas.sort ((a,b) => {
+    if(a.toLowerCase() > b.toLowerCase()){
+        return 1;
+    } else {
+        return -1;
+    }
+})
+
 console.log(frutas);
 
 frutas.reverse();
